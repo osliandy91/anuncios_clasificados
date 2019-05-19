@@ -1,0 +1,218 @@
+
+
+html{
+
+    font-family: "Open Sans";
+}
+
+
+.container{
+    margin: 10px auto;
+    width: 100%;
+    justify-content: space-around;
+
+
+
+}
+.submit{
+    text-align: center;
+
+}
+
+
+
+.flex{
+
+display: flex;
+    flex-flow: row wrap;
+}
+
+.list{
+
+}
+
+.element{
+    color: blue;
+
+
+}
+.description{
+
+    display: inline-block;
+    color: gray;
+}
+
+
+h1{
+    font-size: 45px;
+    color: #0099e5;
+    text-align: center;
+    background:aliceblue;
+}
+span{
+    color: #ff4c4c;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+
+}
+
+a:hover, span:hover{
+    background: #7fbad8;
+    cursor: pointer;
+
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    margin: 5px;
+text-align: -moz-left;
+}
+
+
+.nav-enlace {
+    width: 200px;
+    font-size: x-large;
+    display: inline-block;
+    background: #0099e5;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-around;
+
+
+
+
+
+}
+.nav-oculto{
+    display: none;
+
+
+
+}
+
+
+
+
+
+
+.nav-boton {
+    font-size: x-large;
+    display: inline-block;
+    background: #0099e5;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.insertar{
+    font-size: x-large;
+
+    background: #ff4c4c;
+    color: white;
+
+
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-around;
+
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.nav-boton:hover, .cancelar:hover{
+    background: #7fbad8;
+    cursor: pointer;
+
+}
+
+.cancelar{
+    font-size: x-large;
+    display: inline-block;
+    background: #e51b43;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-around;
+
+
+}
+
+
+
+
+@media (max-width: 540px) {
+    .flex {
+        flex-direction: column;
+
+    }
+
+    .nav-enlace {
+        display: none;
+
+
+    }
+
+
+    .nav-oculto {
+
+        font-size: x-large;
+
+        background: #0099e5;
+        color: white;
+
+
+        text-decoration: none;
+        border-radius: 5px;
+        justify-content: space-around;
+
+        display: block;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+
+
+    }
+
+
+
+    .nav-boton {
+        display: none;
+
+    }
+
+
+    .show, .show1, .show2, .show3, .show4, .show5 {
+        display: none;
+    }
+
+
+    .aparece {
+        display: block;
+    }
+
+    .insertar {
+       background: #ff4c4c;
+        margin-bottom: 15px;
+    }
+
+}

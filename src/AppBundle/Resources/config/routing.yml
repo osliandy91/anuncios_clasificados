@@ -1,0 +1,5 @@
+app_anuncio:
+    resource: "@AppBundle/Resources/config/routing/anuncio.yml"
+    prefix:   /
+
+

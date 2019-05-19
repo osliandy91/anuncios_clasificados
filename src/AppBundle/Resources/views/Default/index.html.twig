@@ -1,0 +1,209 @@
+
+{% extends '@App/Default/layout.html.twig' %}
+
+
+
+
+
+{% block body %}
+
+<h1>ANUNCIOS CLASIFICADOS EN <span>CUBA</span></h1>
+
+
+<a href="{{ path('anuncio_new') }}" class="insertar">Agregar Anuncio</a>
+
+
+<section class="container flex">
+
+    <div class="columna">
+
+
+
+        <a href="#" class="nav-oculto " onclick="accion('show')">Compra/Venta</a>
+        <a href="#" class="nav-enlace" onclick="">Compra/Venta</a>
+
+        <ul class="">
+            <li class="show">
+                <a href="celulares/list"> Celulares</a></li>
+            <li class="show">
+                <a href="list.php?id=MP3"> MP3</a></li>
+            <li class="show">
+                <a href="list.php?id=mouse_teclado">Mouse y Teclado</a></li>
+            <li class="show">
+                <a href="list.php?id=kit">Kit Micro+Board+Ram</a></li>
+            <li class="show">
+                <a href="/compra-venta/camara-foto-video/">Motherboard</a></li>
+            <li class="show">
+                <a href="/compra-venta/aire-acondicionado/">Microprocesador</a></li>
+            <li class="show">
+                <a href="/compra-venta/consola-videojuego-juegos/">Memoria Ram</a></li>
+            <li class="show">
+                <a href="/compra-venta/satelite/">Tarjeta de Video</a></li>
+
+            <li class="show">
+                <a href="/compra-venta/divisas/">Wifi/Red</a></li>
+        </ul>
+
+
+    </div>
+
+
+    <div class="columna">
+        <a href="#" class="nav-oculto " onclick="accion('show1')">Computadoras</a>
+        <a href="#" class="nav-enlace" id="computadoras">Computadoras</a>
+
+        <ul id="computadoras">
+            <li class="show1">
+                <a href="/compra-venta/celulares-lineas-accesorios/" style="margin-right: 2px;"> Ventas de
+                    Computadoras</a></li>
+            <li class="show1">
+                <a href="/compra-venta/reproductor-mp3-mp4-ipod/" style="margin-right: 2px;"> Monitor</a></li>
+            <li class="show1">
+                <a href="/compra-venta/reproductor-dvd-vcd-dvr/" style="margin-right: 2px;">Mouse y Teclado</a></li>
+            <li class="show1">
+                <a href="/compra-venta/televisor/" style="margin-right: 2px;">Kit Micro+Board+Ram</a></li>
+            <li class="show1">
+                <a href="/compra-venta/camara-foto-video/" style="margin-right: 2px;">Motherboard</a></li>
+            <li class="show1">
+                <a href="/compra-venta/aire-acondicionado/" style="margin-right: 2px;">Microprocesador</a></li>
+            <li class="show1">
+                <a href="/compra-venta/consola-videojuego-juegos/" style="margin-right: 2px;">Memoria Ram</a></li>
+            <li class="show1">
+                <a href="/compra-venta/satelite/" style="margin-right: 2px;">Tarjeta de Video</a></li>
+
+            <li class="show1">
+                <a href="/compra-venta/divisas/" style="margin-right: 2px;">Wifi/Red</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+
+    <div class="columna">
+        <a href="#" class="nav-oculto " onclick="accion('show2')">Vehículos</a>
+        <a href="#" class="nav-enlace ">Vehículos</a>
+        <ul class="">
+            <li>
+                <a class="show2" href="/compra-venta/celulares-lineas-accesorios/" style="margin-right: 2px;"> Autos</a>
+            </li>
+            <li>
+                <a class="show2" href="/compra-venta/reproductor-mp3-mp4-ipod/" style="margin-right: 2px;"> Monitor</a>
+            </li>
+            <li>
+                <a class="show2" href="/compra-venta/reproductor-dvd-vcd-dvr/" style="margin-right: 2px;">Mouse y
+                    Teclado</a></li>
+            <li>
+                <a class="show2" href="/compra-venta/televisor/" style="margin-right: 2px;">Kit Micro+Board+Ram</a></li>
+            <li>
+                <a class="show2" href="/compra-venta/camara-foto-video/" style="margin-right: 2px;">Motherboard</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+    <div class="columna">
+        <a href="#" class="nav-oculto " onclick="accion('show3')">Viviendas</a>
+        <a href="#" class="nav-enlace  ">Viviendas</a>
+        <ul class="">
+            <li>
+                <a class="show3" href="/compra-venta/celulares-lineas-accesorios/" style="margin-right: 2px;"> Casas</a>
+            </li>
+            <li>
+                <a class="show3" href="/compra-venta/reproductor-mp3-mp4-ipod/" style="margin-right: 2px;"> Monitor</a>
+            </li>
+            <li>
+                <a class="show3" href="/compra-venta/reproductor-dvd-vcd-dvr/" style="margin-right: 2px;">Mouse y
+                    Teclado</a></li>
+            <li>
+                <a class="show3" href="/compra-venta/televisor/" style="margin-right: 2px;">Kit Micro+Board+Ram</a></li>
+            <li>
+                <a class="show3" href="/compra-venta/camara-foto-video/" style="margin-right: 2px;">Motherboard</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+
+    <div class="columna">
+        <a href="#" class="nav-oculto " onclick="accion('show4')">Servicios</a>
+        <a href="#" class="nav-enlace " onclick="">Servicios</a>
+        <ul class="">
+            <li>
+                <a class="show4" href="/compra-venta/celulares-lineas-accesorios/" style="margin-right: 2px;">
+                    Servicios</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/reproductor-mp3-mp4-ipod/" style="margin-right: 2px;"> Monitor</a>
+            </li>
+            <li>
+                <a class="show4" href="/compra-venta/reproductor-dvd-vcd-dvr/" style="margin-right: 2px;">Mouse y
+                    Teclado</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/televisor/" style="margin-right: 2px;">Kit Micro+Board+Ram</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/camara-foto-video/" style="margin-right: 2px;">Motherboard</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/aire-acondicionado/" style="margin-right: 2px;">Microprocesador</a>
+            </li>
+            <li>
+                <a class="show4" href="/compra-venta/consola-videojuego-juegos/" style="margin-right: 2px;">Memoria
+                    Ram</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/satelite/" style="margin-right: 2px;">Tarjeta de Video</a></li>
+
+            <li>
+                <a class="show4" href="/compra-venta/divisas/" style="margin-right: 2px;">Wifi/Red</a></li>
+
+
+            <li>
+                <a class="show4" href="/compra-venta/electrodomesticos/" style="margin-right: 2px;">Bocinas</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/muebles-decoracion/" style="margin-right: 2px;">Tarjeta de
+                    audio</a></li>
+            <li>
+                <a class="show4" href="/compra-venta/ropa-zapato-accesorios/" style="margin-right: 2px;">Chasis</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+
+    <div class="columna6">
+        <span  class="nav-oculto " onclick="accion('show5')">Empleos</span>
+        <span  class="nav-enlace " onclick="">Empleos</span>
+        <ul class="">
+
+            <li>
+                <a class="show5" href="/compra-venta/consola-videojuego-juegos/" style="margin-right: 2px;">Ofertas</a>
+            </li>
+            <li>
+                <a class="show5" href="/compra-venta/satelite/" style="margin-right: 2px;">Tarjeta de Video</a></li>
+        </ul>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/funcion.js') }}"></script>
+
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,43 @@
+{% extends '@App/Default/layout.html.twig' %}
+
+
+
+
+
+{% block body %}
+
+    <a href="{{ path('anuncio_new') }}" class="insertar">Agregar Anuncio</a>
+
+    <h1>LISTADO DE  {{ anuncios[0].category|upper}}</h1>
+
+    <table>
+
+        <tbody>
+
+
+
+
+
+        {% for anuncio in anuncios %}
+
+                <div class="list">
+            <tr>
+                <td>{{ anuncio.price }}</td>
+                <td>cuc</td>
+                <td><a class="element" href="{{ path('anuncio_show', { 'id': anuncio.id }) }}">{{ anuncio.title }}</a></td>
+
+                <td><p class="description">{{ anuncio.description }}</p></td>
+
+
+            </tr>
+                </div>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a class="nav-boton" href="{{ path('anuncio_index') }}">Atras</a>
+        </li>
+    </ul>
+{% endblock %}
